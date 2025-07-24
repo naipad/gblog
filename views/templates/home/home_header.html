@@ -1,0 +1,22 @@
+{{ define "home_header" }}
+<header class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-indigo-800">
+    <button mdui-drawer="{target: '#main-drawer'}" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content:'菜单'}">
+      <i class="mdui-icon material-icons">menu</i>
+    </button>
+    <a href="https://nnr.moe" class="mdui-typo-headline mdui-hidden-xs">NNR</a>
+
+    <a href="./" class="mdui-typo-title mdui-hidden-xs">登录</a>
+
+    <div class="mdui-toolbar-spacer"></div>
+
+
+    <a href="/register">注册</a>
+    <a href="/login">登录</a>
+
+    <span class="mdui-btn mdui-btn-icon" mdui-tooltip="{content:'rtx on/off'}" onclick="rtx()">
+      <i class="mdui-icon material-icons">brightness_4</i>
+    </span>
+  </div>
+</header>
+{{ end }}
