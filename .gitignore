@@ -1,0 +1,8 @@
+# Logs
+logs
+*.log
+static
+__debug_bin*
+localdb
+gblog.exe
+gblog

@@ -1,0 +1,57 @@
+{{ define "home_index" }}
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <meta name="renderer" content="webkit">
+  <meta name="keyword" content="keyword">
+  <meta name="description" content="description">
+  <link rel="shortcut icon" href="/img/logo.svg">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/assets/libs/bulma/bulma.min.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+
+<body>
+  {{ block "home_header" . }}{{ end }}
+  <main>
+    <aside class="menu">
+      <p class="menu-label">General</p>
+      <ul class="menu-list">
+        <li><a>Dashboard</a></li>
+        <li><a>Customers</a></li>
+      </ul>
+      <p class="menu-label">Administration</p>
+      <ul class="menu-list">
+        <li><a>Team Settings</a></li>
+        <li>
+          <a class="is-active">Manage Your Team</a>
+          <ul>
+            <li><a>Members</a></li>
+            <li><a>Plugins</a></li>
+            <li><a>Add a member</a></li>
+          </ul>
+        </li>
+        <li><a>Invitations</a></li>
+        <li><a>Cloud Storage Environment Settings</a></li>
+        <li><a>Authentication</a></li>
+      </ul>
+      <p class="menu-label">Transactions</p>
+      <ul class="menu-list">
+        <li><a>Payments</a></li>
+        <li><a>Transfers</a></li>
+        <li><a>Balance</a></li>
+      </ul>
+    </aside>
+  </main>
+  {{ block "home_footer" . }}{{ end }}
+
+
+  <script async type="text/javascript" src="/assets/js/app.js"></script>
+  {{ template "extra_scripts" . }}
+</body>
+
+</html>
+{{ end }}
